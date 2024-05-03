@@ -146,14 +146,14 @@ public class Remove_Books extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Remove_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Remove_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Remove_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Remove_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException Remove_Books) {
+            java.util.logging.Logger.getLogger(Remove_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, Remove_Books);
+        } catch (InstantiationException Remove_Books) {
+            java.util.logging.Logger.getLogger(Remove_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, Remove_Books);
+        } catch (IllegalAccessException Remove_Books) {
+            java.util.logging.Logger.getLogger(Remove_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, Remove_Books);
+        } catch (javax.swing.UnsupportedLookAndFeelException Remove_Books) {
+            java.util.logging.Logger.getLogger(Remove_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, Remove_Books);
         }
         //</editor-fold>
 

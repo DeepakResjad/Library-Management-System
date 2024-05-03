@@ -144,7 +144,7 @@ public class LoginPage extends javax.swing.JFrame {
         // TODO add your handling code here:jdbc:mysql://localhost:3306/?user=root
        String url="jdbc:mysql://localhost:3306/library?useSSL=false";
        String mysqluser="root";
-       String mysqlpwd= "11b09MYSQL!";
+       String mysqlpwd= "Saiteja@18";
        String pswrd=new String(password.getPassword());
        String username=user.getText();
        String query=("select pswrd from users where username ='"+username+"';");
@@ -159,8 +159,8 @@ public class LoginPage extends javax.swing.JFrame {
                 if(realpswrd.equals(pswrd))
                  {
                      
-                    Add_Books adb=new Add_Books();
-                    adb.setVisible(true);
+                    UserDashboard udb=new UserDashboard();
+                    udb.setVisible(true);
                     this.dispose();
                  }
                  else
@@ -181,7 +181,7 @@ public class LoginPage extends javax.swing.JFrame {
         // TODO add your handling code here:
         String url="jdbc:mysql://localhost:3306/library?useSSL=false";
        String mysqluser="root";
-       String mysqlpwd= "11b09MYSQL!";
+       String mysqlpwd= "Saiteja@18";
        String pswrd=new String(password.getPassword());
        String username=user.getText();
        String query=("select PASSWORD from admin where USER_ID ='"+username+"';");
@@ -237,14 +237,14 @@ public class LoginPage extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException LoginPage) {
+            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, LoginPage);
+        } catch (InstantiationException LoginPage) {
+            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, LoginPage);
+        } catch (IllegalAccessException LoginPage) {
+            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, LoginPage);
+        } catch (javax.swing.UnsupportedLookAndFeelException LoginPage) {
+            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, LoginPage);
         }
         //</editor-fold>
 

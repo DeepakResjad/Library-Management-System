@@ -14,7 +14,7 @@ public class Dashboard extends javax.swing.JFrame {
      */
     public Dashboard() {
         initComponents();
-        //setDefaultCloseOperation(Dashboard.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(Dashboard.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -31,7 +31,7 @@ public class Dashboard extends javax.swing.JFrame {
         b1 = new javax.swing.JButton();
         b2 = new javax.swing.JButton();
         b3 = new javax.swing.JButton();
-        b7 = new javax.swing.JButton();
+       // b7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(585, 385));
@@ -62,13 +62,13 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        b7.setText("EDIT ADMIN");
-        b7.setPreferredSize(new java.awt.Dimension(113, 23));
-        b7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b7ActionPerformed(evt);
-            }
-        });
+        // b7.setText("EDIT ADMIN");
+        // b7.setPreferredSize(new java.awt.Dimension(113, 23));
+        // b7.addActionListener(new java.awt.event.ActionListener() {
+        //     public void actionPerformed(java.awt.event.ActionEvent evt) {
+        //         b7ActionPerformed(evt);
+        //     }
+        // });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -77,7 +77,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(191, 191, 191)
-                .addComponent(b7, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+               // .addComponent(b7, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(152, Short.MAX_VALUE)
@@ -99,9 +99,9 @@ public class Dashboard extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(b3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
-                .addComponent(b7, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53))
-        );
+                // .addComponent(b7, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                // .addGap(53, 53, 53))
+        ));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -124,11 +124,11 @@ public class Dashboard extends javax.swing.JFrame {
         remove.setVisible(true);
     }//GEN-LAST:event_b3ActionPerformed
 
-    private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
-        // TODO add your handling code here:
-       Edit_Admin edit=new Edit_Admin();
-       edit.setVisible(true);
-    }//GEN-LAST:event_b7ActionPerformed
+    // private void b7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b7ActionPerformed
+    //     // TODO add your handling code here:
+    //    Edit_Admin edit=new Edit_Admin();
+    //    edit.setVisible(true);
+    // }//GEN-LAST:event_b7ActionPerformed
     
     /**
      * @param args the command line arguments
@@ -146,14 +146,14 @@ public class Dashboard extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException Dashboard) {
+            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, Dashboard);
+        } catch (InstantiationException Dashboard) {
+            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, Dashboard);
+        } catch (IllegalAccessException Dashboard) {
+            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, Dashboard);
+        } catch (javax.swing.UnsupportedLookAndFeelException Dashboard) {
+            java.util.logging.Logger.getLogger(Dashboard.class.getName()).log(java.util.logging.Level.SEVERE, null, Dashboard);
         }
         //</editor-fold>
 
@@ -172,7 +172,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton b1;
     private javax.swing.JButton b2;
     private javax.swing.JButton b3;
-    private javax.swing.JButton b7;
+    //private javax.swing.JButton b7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JProgressBar jProgressBar1;
     // End of variables declaration//GEN-END:variables
