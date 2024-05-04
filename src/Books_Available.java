@@ -231,7 +231,7 @@ public class Books_Available extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify                     
+    // Variables declaration                     
     private javax.swing.JButton applyFilterButton;
     private javax.swing.JButton back;
     private javax.swing.JButton fetch;

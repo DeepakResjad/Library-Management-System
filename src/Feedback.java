@@ -1,18 +1,13 @@
 
 import java.sql.*;
 import javax.swing.*;
-public class Add_Books extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Add_Books
-     */
-    
-    public Add_Books() {
+public class Feedback extends javax.swing.JFrame{
+    public Feedback() {
         initComponents();
-        setDefaultCloseOperation(Add_Books.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(Feedback.DISPOSE_ON_CLOSE);
     }
 
-    
     // This method is called from within the constructor to initialize the form.
      
     @SuppressWarnings("unchecked")
@@ -23,12 +18,10 @@ public class Add_Books extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         t1 = new javax.swing.JTextField();
         t2 = new javax.swing.JTextField();
         t3 = new javax.swing.JTextField();
         t4 = new javax.swing.JTextField();
-        t5 = new javax.swing.JTextField();
         b1 = new javax.swing.JButton();
         b2 = new javax.swing.JButton();
 
@@ -41,19 +34,15 @@ public class Add_Books extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("CATEGORY");
+        jLabel2.setText("NAME OF THE BOOK");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("NAME");
+        jLabel3.setText("USER NAME");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("AUTHOR");
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("COPIES");
+        jLabel4.setText("COMMENTS");
 
         t1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,14 +68,8 @@ public class Add_Books extends javax.swing.JFrame {
             }
         });
 
-        t5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                t5ActionPerformed(evt);
-            }
-        });
-
         b1.setFont(new java.awt.Font("Segoe UI", 1, 14)); 
-        b1.setText("ADD");
+        b1.setText("SUBMIT");
         b1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b1ActionPerformed(evt);
@@ -114,10 +97,10 @@ public class Add_Books extends javax.swing.JFrame {
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                           )
                         .addGap(51, 51, 51)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(t5, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            
                             .addComponent(t4, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(t3, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(t2, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -150,10 +133,6 @@ public class Add_Books extends javax.swing.JFrame {
                     .addComponent(t4, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(t5, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE))
-                .addGap(39, 39, 39)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(b1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(18, Short.MAX_VALUE))
@@ -163,7 +142,7 @@ public class Add_Books extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void t1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t1ActionPerformed
-        
+       
     }//GEN-LAST:event_t1ActionPerformed
 
     private void t2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t2ActionPerformed
@@ -175,12 +154,8 @@ public class Add_Books extends javax.swing.JFrame {
     }//GEN-LAST:event_t3ActionPerformed
 
     private void t4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t4ActionPerformed
-        
+       
     }//GEN-LAST:event_t4ActionPerformed
-
-    private void t5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t5ActionPerformed
-        
-    }//GEN-LAST:event_t5ActionPerformed
 
     private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
         
@@ -189,41 +164,31 @@ public class Add_Books extends javax.swing.JFrame {
 
     private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
         
-        String url="jdbc:mysql://localhost:3306/library?useSSL=false";
+       String url="jdbc:mysql://localhost:3306/library?useSSL=false";
        String mysqluser="root";
        String mysqlpwd= "Saiteja@18";
-       
-       String query="insert into books values(?,?,?,?,?);";
+       String query="insert into feedback (isbn, book_name, user_name, comments) values (?,?,?,?);";
        String isbn=t1.getText();
-       String category=t2.getText();
-       String name=t3.getText();
-       String author=t4.getText();
-       int copies=Integer.parseInt(t5.getText());
-       String checkquery="update books set copies=copies+"+copies+" where name='"+name+"' and category='"+category+"' and isbn='"+isbn+"' and author='"+author+"';";
+       String book_name=t2.getText();
+       String user_name=t3.getText();
+       String comments=t4.getText();
+      
        try {
             Connection conn= DriverManager.getConnection(url,mysqluser,mysqlpwd);
-            Statement stmnt=conn.createStatement();
-            int rows=stmnt.executeUpdate(checkquery);
-            if(rows>0)
-            {
-                JOptionPane.showMessageDialog(this,"One record added successfully");
-            }
-            else
-            {
+            
                 PreparedStatement stm = conn.prepareCall(query);
-                stm.setString(2,name);
-                stm.setString(3,author);
-                stm.setString(4,category);
                 stm.setString(1,isbn);
-                stm.setInt(5,copies);
+                stm.setString(2,book_name);
+                stm.setString(3,user_name);
+                stm.setString(4,comments);
                 stm.execute();
-                JOptionPane.showMessageDialog(this,"One record added successfully");
-            }
+                JOptionPane.showMessageDialog(this,"Feedback submitted successfully");
+            
            t1.setText(null);
            t2.setText(null);
            t3.setText(null);
            t4.setText(null);
-           t5.setText(null);
+           
        }
        catch(Exception e)  {
         JOptionPane.showMessageDialog(this, e);
@@ -231,9 +196,7 @@ public class Add_Books extends javax.swing.JFrame {
 
     }//GEN-LAST:event_b1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         
@@ -244,21 +207,21 @@ public class Add_Books extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException Add_Books) {
-            java.util.logging.Logger.getLogger(Add_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, Add_Books);
-        } catch (InstantiationException Add_Books) {
-            java.util.logging.Logger.getLogger(Add_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, Add_Books);
-        } catch (IllegalAccessException Add_Books) {
-            java.util.logging.Logger.getLogger(Add_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, Add_Books);
-        } catch (javax.swing.UnsupportedLookAndFeelException Add_Books) {
-            java.util.logging.Logger.getLogger(Add_Books.class.getName()).log(java.util.logging.Level.SEVERE, null, Add_Books);
+        } catch (ClassNotFoundException Feedback) {
+            java.util.logging.Logger.getLogger(Feedback.class.getName()).log(java.util.logging.Level.SEVERE, null, Feedback);
+        } catch (InstantiationException Feedback) {
+            java.util.logging.Logger.getLogger(Feedback.class.getName()).log(java.util.logging.Level.SEVERE, null, Feedback);
+        } catch (IllegalAccessException Feedback) {
+            java.util.logging.Logger.getLogger(Feedback.class.getName()).log(java.util.logging.Level.SEVERE, null, Feedback);
+        } catch (javax.swing.UnsupportedLookAndFeelException Feedback) {
+            java.util.logging.Logger.getLogger(Feedback.class.getName()).log(java.util.logging.Level.SEVERE, null, Feedback);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Add_Books().setVisible(true);
+                new Feedback().setVisible(true);
             }
         });
     }
@@ -270,11 +233,9 @@ public class Add_Books extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField t1;
     private javax.swing.JTextField t2;
     private javax.swing.JTextField t3;
     private javax.swing.JTextField t4;
-    private javax.swing.JTextField t5;
-    // End of variables declaration
+   
 }
